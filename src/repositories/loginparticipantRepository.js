@@ -1,8 +1,6 @@
 var mongoose = require('mongoose');
 
-var loginParticipanteSchema = require('./../schemas/loginparticipantSchema');
-
-var LoginParticipant = mongoose.model('LoginParticipant', loginParticipanteSchema);
+var LoginParticipant = require('./../schemas/loginparticipantSchema');
 
 function findAll(){
     return LoginParticipant.find({});

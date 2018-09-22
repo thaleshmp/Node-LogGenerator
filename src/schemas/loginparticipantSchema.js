@@ -4,7 +4,7 @@ var baseSchema = require('./baseSchema');
 
 const { ObjectId, Schema } = baseSchema;
 
-module.exports = new Schema({
+var schema = new Schema({
     Id: ObjectId,
     Campanha: Number,
     Ip: String,
@@ -14,4 +14,6 @@ module.exports = new Schema({
     Nome: String,
     Cargo: String,
     DataAcesso: Date
-}, {collection: 'loginparticipantDEV', versionKey: false});
+}, {collection: 'loginparticipantDEV', versionKey: false})
+
+module.exports = mongoose.model('LoginParticipant', schema);
