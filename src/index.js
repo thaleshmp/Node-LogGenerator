@@ -12,7 +12,7 @@ var loginparticipantRepository = require('./repositories/loginparticipantReposit
 
 var numberOfSimulations = args.i ? args.i : 10;
 
-console.log(args.iterations ? 'No iterations parameter were provided, running by the default value (10)' : 'Providing ' + args.i + ' logs');
+console.log(args.i ? 'No iterations parameter were provided, running by the default value (10)' : 'Providing ' + args.i + ' logs');
 
 var logins = [];
 

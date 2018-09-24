@@ -1,5 +1,4 @@
-var mongoose = require('mongoose');
-
+//var mongoose = require('mongoose');
 var LoginParticipant = require('./../schemas/loginparticipantSchema');
 
 function findAll(){
